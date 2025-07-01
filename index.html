@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Text-to-Speech with Video Background</title>
+
+</head>
+<body>
+  <div class="content">
+
+    <video src="vid/bg.mp4" autoplay loop muted></video>
+
+    <div class="speech-container">
+      <input type="text" id="text" placeholder="Type something...">
+      <button onclick="speakText()">Speak</button>
+      
+      <select id="language" class="language-select">
+        <option value="en-US">English (US)</option>
+        <option value="es-ES">Spanish</option>
+        <option value="fr-FR">French</option>
+        <option value="de-DE">German</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

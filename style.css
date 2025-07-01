@@ -1,0 +1,65 @@
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .content video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+
+    .speech-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .speech-container input {
+      padding: 0.8rem;
+      width: 300px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .speech-container button {
+      padding: 0.8rem 1.5rem;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-left: 10px;
+      transition: background 0.3s;
+    }
+
+    .speech-container button:hover {
+      background: #45a049;
+    }
+
+    .language-select {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
