@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   height: 100vh;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 .content {
