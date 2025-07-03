@@ -1,4 +1,5 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta property="og:title" content="TypeN'Talk">
   <meta property="og:description" content="Skip the reading and listen instead. Your AI voice agent reads any text aloud instantly with any chosen language.">
   <meta property="og:image" content="https://type-n-talk.vercel.app/vid/des.png?v=2">
@@ -12,20 +13,19 @@
   <title>TypeN'Talk</title> 
 </head>
 <body>
-  <div class="content">
-    <video src="vid/bg.mp4" autoplay loop muted></video>
-    <div class="speech-container">
-      <textarea id="text" aria-label="Text to speak" placeholder="Type something.."></textarea>
-      <div class="btn-lag">
-        <button id="speakButton" class="btn bg-prussian btn-sm text-white">Speak</button>
-        <select id="language" aria-label="Select language" class="language-select btn bg-prussian btn-sm text-white">
-          <option value="loading">Loading voices...</option>
-        </select>
-      </div>
-      <div id="voiceStatus" class="mt-2 small"></div>
+<div class="content">
+  <video src="vid/bg.mp4" autoplay loop muted></video>
+  <div class="speech-container">
+    <textarea id="text" aria-label="Text to speak" placeholder="Type something.."></textarea>
+    <div class="btn-lag">
+      <button id="speakButton" class="btn bg-prussian btn-sm text-white">Speak</button>
+      <select id="language" aria-label="Select language" class="language-select btn bg-prussian btn-sm text-white">
+        <option value="loading">Loading voices...</option>
+      </select>
     </div>
+    <div id="voiceStatus" class="mt-2 small"></div>
   </div>
-
+</div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="script.js"></script>
 </body>

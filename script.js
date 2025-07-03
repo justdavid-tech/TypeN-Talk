@@ -106,7 +106,7 @@ function getBestVoiceForLang(lang) {
   const familyMatch = availableVoices.find(voice => voice.lang.startsWith(langPrefix));
   if (familyMatch) return familyMatch;
   
-  // Finally try any voice that includes the language code
+  // Finally try any voice that includes the language 
   return availableVoices.find(voice => voice.lang.includes(langPrefix));
 }
 
